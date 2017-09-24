@@ -1,0 +1,12 @@
+body {
+	background-image: url(IMG_1513.jpg);
+	font-family:"Courier New";
+	text-align: center;
+	color: white;
+	margin-top: 100px;
+}
+div {
+	background-color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
