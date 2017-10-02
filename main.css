@@ -1,12 +1,10 @@
 body {
 	
 	font-family:"Courier New";
-	text-align: center;
-	color: white;
+	color: black;
 	margin-top: 100px;
 }
 div {
-	background-color: black;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
