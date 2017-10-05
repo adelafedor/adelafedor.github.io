@@ -173,7 +173,8 @@
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <!-- <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> -->
+    <div class="w3-modal-content w3-animate-zoom w3-transparent w3-padding-64">
         <!-- <img id="img01" class="w3-image"> -->
         <p id="caption" class="w3-opacity w3-large"></p>
     </div>
@@ -194,13 +195,13 @@
         var experienceText;
         var captionText = document.getElementById("caption");
         if (expNum == 1) {
-            captionText.innerHTML = "Here is my experience 1 description";
+            captionText.innerHTML = "Design program manager for a $300M program at one of the world's largest banks: Managed all aspects of the design team agile delivery process from intake through visual testing and post-production feedback. The online experience created by this team is used by over 60 M consumers to do their everyday finances and set a new standard for how customers interact with their banks on the web <br> Primary project intake point of contact for digital customer experience team of 100+ designers: Communicated with leads of seven design teams (Executive Directors and VPs) to help them understand project requirements, estimate design work effort and address issues. Created an excel book tool that tracked my team’s demand and capacity, which is used to understand the team’s book of work each release and allows for more effective resource planning. <br> Program management asset creator: Created a playbook that identifies best practices for project managers establishing a successful delivery of UX design within an agile methodology. This documentation has proved to significantly decrease the amount of time needed to ramp up a design project management resource. <br> Design team visual testing lead: Partnered with client lead to define a new process for completing visual testing of digital experiences, called Paired Programming. This approach ensures that designers and developers work more effectively together to fix visual issues, saving time and resources. <br> Design Review Coordinator at large financial institute: Planned and facilitated design reviews with Managing and Executive Directors, VPs and other stakeholders to establish design alignment and provide visibility to product and development partners.";
         } else if (expNum == 2){
-            captionText.innerHTML = "Here is my experience 2 description";
+            captionText.innerHTML = "Acted as a user experience product manager for several projects: Translated high level design requirements into detailed specifications for development teams. Communicated design intent to product, development and operations partners, and was point of contact for user experience questions/issues.";
         } else if (expNum == 3){
-            captionText.innerHTML = "Here is my experience 3 description";
+            captionText.innerHTML = "Researcher, Prof. Craig Heller's Biology Lab, Stanford University: Investigated the effects that circadian rhythms have on memory and learning. Conducted brain surgery on Siberian Hamsters. Completed and analyzed the results of behavioral tests. Compiled and presented conclusions in the form of an Honors Thesis. <br> Research Intern, Ames NASA Reseach Center, Mountain View, CA: Organized through the National Space Biomedical Research Institute Apprenticeship Program. Conducted computational analyses to determine correlations between electromagnetic radiation and biological markers. <br> Research, Clinical Technician & Administrative Assistant, Great Lakes Eye Consultants, Traverse City, MI: Conducted research in Ultrasound Biomicroscopy and in understanding how intraocular pressure changes in young adults during accommodation. In parallel, communicated with patients, organized and updated medical records, and scheduled appointments. Performed clinical testing using Optical Coherence Tomography, Corneal Topography, Fundus Photography, Autorefraction, and Visual Field testing.";
         } else if (expNum == 4){
-            captionText.innerHTML = "Here is my experience 4 description";
+            captionText.innerHTML = "Vice president of Stanford’s Business Association of Entrepreneurial Students: Managed a team of ~15 student members and a budget of $50K+ USD to coordinate all aspects of an international entrepreneurial conference held at Stanford University. Worked effectively with Founders, CEOs and representatives from a variety of Silicon Valley companies. <br> Intel Global Challenge conference coordinator: Partnered with Intel to create and organize a one-day entrepreneurial conference for the finalists of the Intel Global Challenge. Pitched ideas and communicated effectively with Intel leads.";
         }
         document.getElementById("modal01").style.display = "block";
     }
