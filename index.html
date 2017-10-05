@@ -123,28 +123,28 @@
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
         <div class="w3-col m3 tile">
-            <img src="img-norway-clouds.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity tile-opacity" alt="clouds in oslo norway">
+            <img src="img-norway-clouds.jpg" style="width:100%" onclick="onClick(1)" class="w3-hover-opacity tile-opacity" alt="clouds in oslo norway">
             <div class = "tile-text">
                 <p> Program Management </p>
             </div>
         </div>
         
         <div class="w3-col m3 tile">
-            <img src="img-norway-rainbow.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity tile-opacity" alt="Rainbow in norway">
+            <img src="img-norway-rainbow.jpg" style="width:100%" onclick="onClick(2)" class="w3-hover-opacity tile-opacity" alt="Rainbow in norway">
             <div class = "tile-text">
                 <p> Product Management </p>
             </div>
         </div>
         
         <div class="w3-col m3 tile">
-            <img src="img-tc-lake.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity tile-opacity" alt="Sunset over lake">
+            <img src="img-tc-lake.JPG" style="width:100%" onclick="onClick(3)" class="w3-hover-opacity tile-opacity" alt="Sunset over lake">
             <div class= "tile-text">
                 <p> Research </p>
             </div>
         </div>
         
         <div class="w3-col m3 tile">
-            <img src="img-waterfall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity tile-opacity" alt="Waterfall hike">
+            <img src="img-waterfall.jpg" style="width:100%" onclick="onClick(4)" class="w3-hover-opacity tile-opacity" alt="Waterfall hike">
             <div class="tile-text">
                 <p> Entrepreneurship </p>
             </div>
@@ -189,11 +189,16 @@
 <!-- javascript functions -->
 <script>
     // Modal Image Gallery
-    function onClick(element) {
+    function onClick(expNum) {
         // document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
+        var experienceText;
         var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
+        if (expNum == 1) {
+            captionText.innerHTML = "Here is my experience 1 description";
+        }
+        document.getElementById("modal01").style.display = "block";
+        //var captionText = document.getElementById("caption");
+        //captionText.innerHTML = element.alt;
     }
 
     // Change style of navbar on scroll
